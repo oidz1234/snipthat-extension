@@ -1,0 +1,31 @@
+{
+    "manifest_version": 3,
+    "name": "SnipThat.io",
+    "description": "Save interesting snippets that you find on the web",
+    "version": "1.0",
+    "homepage_url": "https://snipthat.io",
+
+    "icons": {
+        "48": "icons/clipboard-48.png"
+    },
+
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {
+        "default_icon": "icons/clipboard-48.png",
+        "default_title": "Snipthat",
+        "default_popup": "popup/popup.html"
+    },
+    "permissions": [
+    "contextMenus",
+    "activeTab",
+    "tabs",
+    "storage",
+    "scripting"
+  ],
+  "host_permissions": [
+          "*://*/*"
+  ]
+
+}
